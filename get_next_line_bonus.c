@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igondra- <igondra-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 22:44:59 by igondra-          #+#    #+#             */
-/*   Updated: 2022/10/26 22:44:59 by igondra-         ###   ########.fr       */
+/*   Updated: 2022/11/05 08:36:02 by igondra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,34 +103,3 @@ char	*get_next_line(int fd)
 	str_save[fd] = ft_save_line(str_save[fd]);
 	return (line);
 }
-
-/* int	main(void)
-{
-	int		fd;
-	int		fd2;
-	char	*file;
-
-	fd = open("file3.txt", O_RDONLY);
-	fd2 = open("file2.txt", O_RDONLY);
-	file = get_next_line(fd);
-	printf("%s", file);
-	file = get_next_line(fd2);
-	printf("%s", file);
-	file = get_next_line(fd);
-	printf("%s", file);
-	file = get_next_line(fd2);
-	printf("%s", file);
-	//fd = open("file.txt", O_RDONLY);
-	file = get_next_line(fd);
-	printf("%s", file);
-	file = get_next_line(fd2);
-	printf("%s", file);
-	file = get_next_line(fd);
-	printf("%s", file);
-	file = get_next_line(fd2);
-	printf("%s", file);
-	free(file);
-	close(fd);
-	close(fd2);
-	return (0);
-} */

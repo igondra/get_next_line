@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igondra- <igondra-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 22:44:59 by igondra-          #+#    #+#             */
-/*   Updated: 2022/10/26 22:44:59 by igondra-         ###   ########.fr       */
+/*   Updated: 2022/11/05 08:36:31 by igondra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,21 +104,3 @@ char	*get_next_line(int fd)
 	str_save = ft_save_line(str_save);
 	return (line);
 }
-
-/* int	main(void)
-{
-	int		fd;
-	char	*file;
-	int		i;
-
-	fd = open("file2.txt", O_RDONLY);
-
-	while(i++ < 7)
-	{	
-		file = get_next_line(fd);
-		printf("%s", file);
-	}	
-	free(file);
-	close(fd);
-	return (0);
-} */

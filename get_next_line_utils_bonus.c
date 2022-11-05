@@ -6,7 +6,7 @@
 /*   By: igondra- <igondra-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 22:44:59 by igondra-          #+#    #+#             */
-/*   Updated: 2022/10/26 22:44:59 by igondra-         ###   ########.fr       */
+/*   Updated: 2022/11/05 08:36:12 by igondra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(char *str)
 	size_t	i;
 
 	i = 0;
-	if(!str)
+	if (!str)
 		return (0);
 	while (str[i] != '\0')
 		i++;
